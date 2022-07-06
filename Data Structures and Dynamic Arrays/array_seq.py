@@ -10,7 +10,7 @@ class Array_Seq:
         yield from self.A
 
     def build(self, X):                                 # O(n)
-        self.A = [a for a in X]
+        self.A = [a for a in X]                         # pretend this builds a static array
         self.size = len(self.A)
 
     def get_at(self, i):                                # O(1)
